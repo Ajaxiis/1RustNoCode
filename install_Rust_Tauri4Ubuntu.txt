@@ -1,0 +1,44 @@
+Для настройки среды разработки Rust и Tauri на Ubuntu 22.04 выполните следующие шаги:
+
+1. Обновите систему:
+```bash
+sudo apt update && sudo apt upgrade -y
+```
+
+2. Установите необходимые зависимости:
+```bash
+sudo apt install -y curl wget build-essential libssl-dev libgtk-3-dev libwebkit2gtk-4.0-dev libappindicator3-dev librsvg2-dev
+```
+
+3. Установите Rust с помощью Rustup:
+```bash
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+```
+Следуйте инструкциям на экране. После установки добавьте Rust в PATH:
+```bash
+source $HOME/.cargo/env
+```
+
+4. Проверьте установку Rust:
+```bash
+rustc --version
+cargo --version
+```
+
+5. Установите Tauri CLI:
+```bash
+cargo install tauri-cli
+```
+
+6. Установите Node.js и npm (необходимы для Tauri):
+```bash
+curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
+sudo apt install -y nodejs
+sudo npm install -g npm@latest
+```
+
+7. Проверьте установку Tauri:
+```bash
+cargo tauri --version
+```
+
