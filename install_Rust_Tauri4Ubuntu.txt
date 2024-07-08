@@ -49,4 +49,7 @@ sudo npm install -g npm@latest
 ```bash
 cargo tauri --version
 ```
+8. Установите шаблонизаторы для Tauri:
+cargo install create-tauri-app
+cargo create-tauri-app
 
