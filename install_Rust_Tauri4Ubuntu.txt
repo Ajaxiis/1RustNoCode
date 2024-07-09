@@ -1,5 +1,5 @@
-Для настройки среды разработки Rust и Tauri на Ubuntu 22.04 выполните следующие шаги:
-<bash>
+#Для настройки среды разработки Rust и Tauri на Ubuntu 22.04 выполните следующие шаги:
+
 #!/bin/bash
 #  This script installs various packages and tools on a Linux system, including:
 #  - aptitude, qbittorrent, vlc
@@ -108,4 +108,4 @@ clear
 echo "Программы установлены, необходима перезагрузка системы." 
 delay 10
 reboot
-</bash>
+
